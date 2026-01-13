@@ -17,6 +17,9 @@ int main(int argc, char** argv)
 	    s = atoi(argv[i+1]);
 	}
     }
+    if (argc < 2){
+	h=1;
+    }
     // SetTraceLogLevel(LOG_NONE);
     InitWindow(470, 120, "ADTimer");
     InitAudioDevice();
