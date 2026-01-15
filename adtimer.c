@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 #define alarm "alarm.mp3"
 
 int main(int argc, char** argv)
@@ -21,6 +22,7 @@ int main(int argc, char** argv)
 	h=1;
     }
     // SetTraceLogLevel(LOG_NONE);
+    SetConfigFlags(FLAG_WINDOW_ALWAYS_RUN);
     InitWindow(470, 120, "ADTimer");
     InitAudioDevice();
     SetTargetFPS(24.0);
@@ -59,6 +61,7 @@ int main(int argc, char** argv)
     UnloadMusicStream(music);
     CloseAudioDevice();
     CloseWindow();
+    
 
     return 0;
 }
