@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-I/home/adarsh/Documents/dev/raylib-5.5_linux_amd64/include",
+      "-o",
+      "adtimer",
+      "adtimer.c"
+    ],
+    "directory": "/home/adarsh/Documents/dev/adtimer",
+    "file": "/home/adarsh/Documents/dev/adtimer/adtimer.c",
+    "output": "/home/adarsh/Documents/dev/adtimer/adtimer"
+  }
+]
