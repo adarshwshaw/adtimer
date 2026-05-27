@@ -7,6 +7,7 @@
 
 int main(int argc, char** argv)
 {
+    const char* filepath = "/home/adarsh/Documents/dev/adtimer/"alarm;
     int h=0,m=0,s=0;
     for (int i =1;i<argc;i++){
 	char* arg=argv[i];
@@ -29,7 +30,7 @@ int main(int argc, char** argv)
     char time_str[16]={0};
     float timer=h*3600 + m*60 + s;
     float time_elapse=0;
-    Music music = LoadMusicStream(alarm);
+    Music music = LoadMusicStream(filepath);
     music.looping=true;
     bool playing = false;
     
